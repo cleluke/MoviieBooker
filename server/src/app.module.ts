@@ -41,3 +41,5 @@ import { JwtModule } from '@nestjs/jwt';
   providers: [UsersService, AuthService, JwtStrategy, JwtGuard],
 })
 export class AppModule {}
+
+//https://dev.to/buildwithgagan/building-a-login-and-registration-system-using-nestjs-with-typeorm-and-postgresql-19hh
