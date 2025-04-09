@@ -1,13 +1,9 @@
 import { Module } from '@nestjs/common';
 import { TypeOrmModule } from '@nestjs/typeorm';
 import { ConfigModule, ConfigService } from '@nestjs/config';
-import {User} from "./users/users.entity";
-import {AuthController} from "./auth/auth.controller";
-import {UsersService} from "./users/users.service";
-import {AuthService} from "./auth/auth.service";
-import {JwtStrategy} from "./auth/jwt/jwt.strategy";
-import {JwtGuard} from "./auth/jwt/jwt.guard";
-import { JwtModule } from '@nestjs/jwt';
+import { MoviesModule } from './movies/movies.module';
+import { UsersModule } from './users/users.module';
+import { AuthModule } from './auth/auth.module';
 
 @Module({
   imports: [
@@ -26,19 +22,11 @@ import { JwtModule } from '@nestjs/jwt';
         synchronize: true,
       }),
     }),
-    TypeOrmModule.forFeature([User]),
 
-    JwtModule.registerAsync({
-      imports: [ConfigModule],
-      inject: [ConfigService],
-      useFactory: async (configService: ConfigService) => ({
-        secret: configService.get<string>('JWT_SECRET'),
-        signOptions: { expiresIn: '1h' },
-      }),
-    }),
+    MoviesModule,
+    UsersModule,
+    AuthModule,
   ],
-  controllers: [AuthController],
-  providers: [UsersService, AuthService, JwtStrategy, JwtGuard],
 })
 export class AppModule {}
 
