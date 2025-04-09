@@ -4,20 +4,17 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e19b682e-d925-4e14-ad2b-daeef7d699d9" name="Changes" comment="Init project">
-      <change afterPath="$PROJECT_DIR$/server/server/src/auth/auth.controller.spec.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server/server/src/auth/auth.controller.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server/server/src/auth/dto/login.dto.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server/server/src/auth/dto/register.dto.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server/server/src/auth/jwt/jwt.strategy.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server/server/src/users/users.entity.ts" afterDir="false" />
+    <list default="true" id="e19b682e-d925-4e14-ad2b-daeef7d699d9" name="Changes" comment="agencement des groupe.modules">
+      <change afterPath="$PROJECT_DIR$/server/server/src/auth/auth.module.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/server/src/movies/movies.controller.spec.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/server/src/movies/movies.controller.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/server/src/movies/movies.module.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/server/src/movies/movies.service.spec.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/server/src/movies/movies.service.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/server/src/users/users.module.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/server/server/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/server/server/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/server/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/server/server/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/server/src/app.controller.spec.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/server/src/app.controller.ts" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/server/server/src/app.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/server/server/src/app.module.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/server/src/app.service.ts" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -28,11 +25,13 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="JavaScript File" />
+        <option value="TypeScript File" />
       </list>
     </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/server" />
+    <option name="ROOT_SYNC" value="DONT_SYNC" />
   </component>
   <component name="GitHubPullRequestSearchHistory"><![CDATA[{
   "lastFilter": {
@@ -92,15 +91,27 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1744099964030</updated>
-      <workItem from="1744099965438" duration="13208000" />
+      <workItem from="1744099965438" duration="23199000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Init project" />
-    <option name="LAST_COMMIT_MESSAGE" value="Init project" />
+    <MESSAGE value="agencement des groupe.modules" />
+    <option name="LAST_COMMIT_MESSAGE" value="agencement des groupe.modules" />
   </component>
 </project>
