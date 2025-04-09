@@ -22,7 +22,6 @@ import { AuthModule } from './auth/auth.module';
         synchronize: true,
       }),
     }),
-
     MoviesModule,
     UsersModule,
     AuthModule,
