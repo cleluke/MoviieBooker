@@ -9,8 +9,6 @@ import {JwtModule} from "@nestjs/jwt";
 
 @Module({
     imports: [
-        ConfigModule,
-        UsersModule,
         JwtModule.registerAsync({
         imports: [ConfigModule],
         inject: [ConfigService],
@@ -18,7 +16,7 @@ import {JwtModule} from "@nestjs/jwt";
             secret: configService.get<string>('JWT_SECRET'),
             signOptions: { expiresIn: '1h' },
         }),
-    }), UsersModule],
+    }), UsersModule, ConfigModule],
     controllers: [AuthController],
     providers: [AuthService, JwtStrategy, JwtGuard],
 })

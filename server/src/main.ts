@@ -10,6 +10,7 @@ async function bootstrap() {
       .setTitle('API de Réservation de Films')
       .setDescription('API avec Authentification et Gestion de Films 🍿') // Description de l\'API
       .setVersion('1.0')
+      .addBearerAuth()
       .build();
 
   const document = SwaggerModule.createDocument(app, config);

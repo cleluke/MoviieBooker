@@ -4,17 +4,30 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e19b682e-d925-4e14-ad2b-daeef7d699d9" name="Changes" comment="agencement des groupe.modules">
-      <change afterPath="$PROJECT_DIR$/server/server/src/auth/auth.module.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server/server/src/movies/movies.controller.spec.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server/server/src/movies/movies.controller.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server/server/src/movies/movies.module.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server/server/src/movies/movies.service.spec.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server/server/src/movies/movies.service.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server/server/src/users/users.module.ts" afterDir="false" />
+    <list default="true" id="e19b682e-d925-4e14-ad2b-daeef7d699d9" name="Changes" comment="Ajout de l'appel TMDB pour les films">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/postcss.config.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/postcss.config.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/api/movies.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/api/movies.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/api/reservation.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/api/reservation.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/pages/Login.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/pages/Login.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/pages/Movies.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/pages/Movies.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/pages/Register.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/pages/Register.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/pages/Reservation.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/pages/Reservation.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/server/server/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/server/server/package-lock.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/server/server/src/app.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/server/server/src/app.module.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/server/src/auth/auth.controller.spec.ts" beforeDir="false" afterPath="$PROJECT_DIR$/server/server/src/auth/auth.controller.spec.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/server/src/auth/auth.controller.ts" beforeDir="false" afterPath="$PROJECT_DIR$/server/server/src/auth/auth.controller.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/server/src/auth/auth.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/server/server/src/auth/auth.module.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/server/src/auth/auth.service.spec.ts" beforeDir="false" afterPath="$PROJECT_DIR$/server/server/src/auth/auth.service.spec.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/server/src/auth/jwt/jwt.guard.spec.ts" beforeDir="false" afterPath="$PROJECT_DIR$/server/server/src/auth/jwt/jwt.guard.spec.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/server/src/auth/jwt/jwt.guard.ts" beforeDir="false" afterPath="$PROJECT_DIR$/server/server/src/auth/jwt/jwt.guard.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/server/src/auth/jwt/jwt.strategy.ts" beforeDir="false" afterPath="$PROJECT_DIR$/server/server/src/auth/jwt/jwt.strategy.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/server/src/main.ts" beforeDir="false" afterPath="$PROJECT_DIR$/server/server/src/main.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/server/src/movies/movies.service.spec.ts" beforeDir="false" afterPath="$PROJECT_DIR$/server/server/src/movies/movies.service.spec.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/server/src/reservation/dto/form-reservation.dto.ts" beforeDir="false" afterPath="$PROJECT_DIR$/server/server/src/reservation/dto/form-reservation.dto.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/server/src/reservation/reservation.entity.ts" beforeDir="false" afterPath="$PROJECT_DIR$/server/server/src/reservation/reservation.entity.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/server/src/users/users.entity.ts" beforeDir="false" afterPath="$PROJECT_DIR$/server/server/src/users/users.entity.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/src/app.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/server/src/app.module.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -24,8 +37,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="JavaScript File" />
         <option value="TypeScript File" />
+        <option value="JavaScript File" />
       </list>
     </option>
   </component>
@@ -33,22 +46,22 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/server" />
     <option name="ROOT_SYNC" value="DONT_SYNC" />
   </component>
-  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
-  "lastFilter": {
-    "state": "OPEN",
-    "assignee": "cleluke"
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;cleluke&quot;
   }
-}]]></component>
-  <component name="GithubPullRequestsUISettings"><![CDATA[{
-  "selectedUrlAndAccountId": {
-    "url": "https://github.com/cleluke/MoviieBooker.git",
-    "accountId": "efc8ab34-9ca3-42b7-9009-dd0f15b38a18"
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/cleluke/MoviieBooker.git&quot;,
+    &quot;accountId&quot;: &quot;efc8ab34-9ca3-42b7-9009-dd0f15b38a18&quot;
   }
-}]]></component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "customColor": "",
-  "associatedIndex": 0
-}]]></component>
+}</component>
+  <component name="ProjectColorInfo">{
+  &quot;customColor&quot;: &quot;&quot;,
+  &quot;associatedIndex&quot;: 0
+}</component>
   <component name="ProjectId" id="2vRFQMNOaCqzvr5eyvwDpPujRej" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
@@ -56,12 +69,14 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "Jest.AuthService.executor": "Debug",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "git-widget-placeholder": "<unknown>",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs.jest.jest_package": "C:/Users/cleme/WebstormProjects/MoviieBooker/server/node_modules/jest",
     "nodejs_package_manager_path": "npm",
     "ts.external.directory.path": "C:\\Users\\cleme\\WebstormProjects\\MoviieBooker\\server\\node_modules\\typescript\\lib",
     "vue.rearranger.settings.migration": "true"
@@ -75,6 +90,25 @@
       <recent name="C:\Users\cleme\WebstormProjects\MoviieBooker\server\src" />
       <recent name="C:\Users\cleme\WebstormProjects\MoviieBooker\server\src\auth\auth" />
     </key>
+  </component>
+  <component name="RunManager">
+    <configuration name="AuthService" type="JavaScriptTestRunnerJest" temporary="true" nameIsGenerated="true">
+      <node-interpreter value="project" />
+      <jest-package value="$PROJECT_DIR$/server/node_modules/jest" />
+      <working-dir value="$PROJECT_DIR$/server" />
+      <envs />
+      <scope-kind value="SUITE" />
+      <test-file value="$PROJECT_DIR$/server/src/auth/auth.service.spec.ts" />
+      <test-names>
+        <test-name value="AuthService" />
+      </test-names>
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Jest.AuthService" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SharedIndexes">
     <attachedChunks>
@@ -112,6 +146,7 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Init project" />
     <MESSAGE value="agencement des groupe.modules" />
-    <option name="LAST_COMMIT_MESSAGE" value="agencement des groupe.modules" />
+    <MESSAGE value="Ajout de l'appel TMDB pour les films" />
+    <option name="LAST_COMMIT_MESSAGE" value="Ajout de l'appel TMDB pour les films" />
   </component>
 </project>

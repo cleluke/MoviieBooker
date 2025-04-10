@@ -1,4 +1,5 @@
-import { Entity, PrimaryGeneratedColumn, Column } from 'typeorm';
+import {Entity, PrimaryGeneratedColumn, Column, OneToMany} from 'typeorm';
+import {Reservation} from "../reservation/reservation.entity";
 
 @Entity('users')
 export class User {
@@ -13,5 +14,8 @@ export class User {
 
     @Column()
     password: string;
+
+    @OneToMany(() => Reservation, reservation => reservation.user)
+    reservations: Reservation[];
 }
 
