@@ -20,9 +20,9 @@ import { ReservationModule } from './reservation/reservation.module';
         ssl: true,
       }),
     }),
+    AuthModule,
     MoviesModule,
     UsersModule,
-    AuthModule,
     ReservationModule,
   ],
 })

@@ -16,7 +16,6 @@ export class ReservationService {
         const startTime = new Date(dto.startTime);
         const endTime = new Date(startTime.getTime() + 2 * 60 * 60 * 1000); // +2h
 
-        // 1. Vérif: délai de 2h avec la dernière réservation
         const latest = await this.reservationRepo.find({
             where: { user },
             order: { startTime: 'DESC' },
@@ -27,11 +26,8 @@ export class ReservationService {
             throw new BadRequestException('Tu dois attendre 2h entre deux réservations');
         }
 
-        // 2. Vérif: pas de chevauchement
         const conflicts = await this.reservationRepo.find({
-            where: {
-                user,
-            },
+            where: { user },
         });
 
         for (const res of conflicts) {
@@ -43,7 +39,6 @@ export class ReservationService {
             }
         }
 
-        // 3. Création
         const reservation = this.reservationRepo.create({
             movieTitle: dto.movieTitle,
             startTime,
@@ -55,13 +50,17 @@ export class ReservationService {
     }
 
     async getUserReservations(user: User) {
-        return this.reservationRepo.find({ where: { user } });
+        return this.reservationRepo.find({
+            where: { user },
+        });
     }
 
     async cancelReservation(id: number, user: User) {
-        const res = await this.reservationRepo.findOneBy({ id });
+        const res = await this.reservationRepo.findOne({
+            where: { id, user },
+        });
 
-        if (!res || res.user.id !== user.id) {
+        if (!res) {
             throw new BadRequestException('Réservation introuvable ou non autorisée');
         }
 
@@ -69,3 +68,6 @@ export class ReservationService {
         return { message: 'Réservation annulée' };
     }
 }
+
+
+

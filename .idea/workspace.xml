@@ -6,28 +6,7 @@
   <component name="ChangeListManager">
     <list default="true" id="e19b682e-d925-4e14-ad2b-daeef7d699d9" name="Changes" comment="Ajout de l'appel TMDB pour les films">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/postcss.config.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/postcss.config.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/api/movies.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/api/movies.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/api/reservation.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/api/reservation.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/pages/Login.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/pages/Login.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/pages/Movies.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/pages/Movies.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/pages/Register.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/pages/Register.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/pages/Reservation.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/pages/Reservation.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/server/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/server/server/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/server/src/app.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/server/server/src/app.module.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/server/src/auth/auth.controller.spec.ts" beforeDir="false" afterPath="$PROJECT_DIR$/server/server/src/auth/auth.controller.spec.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/server/src/auth/auth.controller.ts" beforeDir="false" afterPath="$PROJECT_DIR$/server/server/src/auth/auth.controller.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/server/src/auth/auth.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/server/server/src/auth/auth.module.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/server/src/auth/auth.service.spec.ts" beforeDir="false" afterPath="$PROJECT_DIR$/server/server/src/auth/auth.service.spec.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/server/src/auth/jwt/jwt.guard.spec.ts" beforeDir="false" afterPath="$PROJECT_DIR$/server/server/src/auth/jwt/jwt.guard.spec.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/server/src/auth/jwt/jwt.guard.ts" beforeDir="false" afterPath="$PROJECT_DIR$/server/server/src/auth/jwt/jwt.guard.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/server/src/auth/jwt/jwt.strategy.ts" beforeDir="false" afterPath="$PROJECT_DIR$/server/server/src/auth/jwt/jwt.strategy.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/server/src/main.ts" beforeDir="false" afterPath="$PROJECT_DIR$/server/server/src/main.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/server/src/movies/movies.service.spec.ts" beforeDir="false" afterPath="$PROJECT_DIR$/server/server/src/movies/movies.service.spec.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/server/src/reservation/dto/form-reservation.dto.ts" beforeDir="false" afterPath="$PROJECT_DIR$/server/server/src/reservation/dto/form-reservation.dto.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/server/src/reservation/reservation.entity.ts" beforeDir="false" afterPath="$PROJECT_DIR$/server/server/src/reservation/reservation.entity.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/server/src/users/users.entity.ts" beforeDir="false" afterPath="$PROJECT_DIR$/server/server/src/users/users.entity.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/src/app.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/server/src/app.module.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />

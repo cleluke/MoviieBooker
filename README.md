@@ -40,7 +40,7 @@ npm install
 
 ```env
 JWT_SECRET=tonSuperSecret
-DATABASE_URL=postgres://user:password@localhost:5432/nomDeTaDb
+DATABASE_URL=postgresql://nest_auth_db_user:k3pRSE0dD6okm2TCFGmGPcZL220zcEmx@dpg-cvrolmmr433s73b0hehg-a.frankfurt-postgres.render.com/nest_auth_db
 ```
 
 4. Lancer l’application
@@ -63,7 +63,7 @@ npm run test
 
 Une fois l’application démarrée, accède à la documentation interactive :
 
-👉 http://localhost:3000/api
+👉 https://moviiebooker-3e00.onrender.com/api
 
 ---
 

@@ -1,4 +1,4 @@
-import { Controller, Post, Body, UseGuards, Request, Get, Delete, Param } from '@nestjs/common';
+import {Controller, Post, Body, UseGuards, Request, Get, Delete, Param, BadRequestException} from '@nestjs/common';
 import { ReservationService } from './reservation.service';
 import { JwtGuard } from '../auth/jwt/jwt.guard';
 import { FormReservationDto } from './dto/form-reservation.dto';
@@ -17,6 +17,7 @@ export class ReservationController {
     @ApiResponse({ status: 400, description: 'Conflit horaire ou format invalide' })
     @ApiBody({ type: FormReservationDto })
     create(@Body() dto: FormReservationDto, @Request() req) {
+        // Passer l'utilisateur authentifié depuis `req.user`
         return this.reservationService.createReservation(dto, req.user);
     }
 
@@ -35,3 +36,4 @@ export class ReservationController {
         return this.reservationService.cancelReservation(+id, req.user);
     }
 }
+

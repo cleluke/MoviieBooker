@@ -1,11 +1,24 @@
 import { NestFactory } from '@nestjs/core';
 import { AppModule } from './app.module';
 import { SwaggerModule, DocumentBuilder } from '@nestjs/swagger';
+import {ValidationPipe} from "@nestjs/common";
 
 async function bootstrap() {
   const app = await NestFactory.create(AppModule);
 
-  // Configuration de Swagger
+  app.useGlobalPipes(new ValidationPipe({
+    transform: true,
+    whitelist: true,
+    forbidNonWhitelisted: true,
+    exceptionFactory: (errors) => {
+      const formattedErrors = errors.map((error) => ({
+        field: error.property,
+        message: Object.values(error.constraints),
+      }));
+      return new Error(JSON.stringify(formattedErrors));
+    },
+  }));
+
   const config = new DocumentBuilder()
       .setTitle('API de Réservation de Films')
       .setDescription('API avec Authentification et Gestion de Films 🍿') // Description de l\'API
